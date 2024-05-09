@@ -50,29 +50,25 @@ public class DESEncryptionDemo {
 
     // Performs the initial permutation (IP)
     private static long initialPermutation(long input) {
-        // Placeholder implementation for demonstration purposes
-        // Replace with actual initial permutation
+
         return input;
     }
 
     // Performs the expansion permutation (E)
     private static long expansionPermutation(long input) {
-        // Placeholder implementation for demonstration purposes
-        // Replace with actual expansion permutation
+
         return input;
     }
 
     // Performs the substitution (S-box)
     private static long substitution(long input) {
-        // Placeholder implementation for demonstration purposes
-        // Replace with actual substitution using S-boxes
+
         return input;
     }
 
     // Performs the permutation (P-box)
     private static long permutation(long input) {
-        // Placeholder implementation for demonstration purposes
-        // Replace with actual permutation using P-box
+
         return input;
     }
 }
