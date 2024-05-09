@@ -113,16 +113,27 @@ public class ElGamal {
             System.out.println("Enter message to encrypt: ");
             BigInteger msg = input.nextBigInteger();
 
-            // Encrypt message
+            System.out.println("1. Encryption");
+            System.out.println("2. Decryption");
+            System.out.println("Enter Your Choice: ");
+
+            int ans2 = input.nextInt();
+
             BigInteger[] ciphertext = encrypt(msg, publicKey, p);
-            BigInteger c1 = ciphertext[0];
-            BigInteger c2 = ciphertext[1];
-            System.out.println("Encrypted message: (" + c1 + ", " + c2 + ")");
+            if (ans2 == 1){
 
-            // Decrypt message
-            BigInteger decryptedMessage = decrypt(ciphertext, privateKey, p);
-            System.out.println("Decrypted message: " + decryptedMessage);
+                // Encrypt message
 
+                BigInteger c1 = ciphertext[0];
+                BigInteger c2 = ciphertext[1];
+                System.out.println("Encrypted message: (" + c1 + ", " + c2 + ")");
+
+            } else if (ans2 == 2) {
+
+                // Decrypt message
+                BigInteger decryptedMessage = decrypt(ciphertext, privateKey, p);
+                System.out.println("Decrypted message: " + decryptedMessage);
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ public class Main {
         String key = input.next();
 
         String encrtyptText = encrypt(plainText, key);
-        System.out.println("Hello world!");
+        
         String plaintext = "HELLO WORLD";
 
 
